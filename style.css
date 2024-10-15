@@ -7,7 +7,8 @@
 body{
     background-color: blue;
     font-family: "Montserrat", sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 main{
@@ -93,6 +94,7 @@ ul{
     top: 0;
     left: 15vw;
     min-height: 100vw;
+    overflow-y: scroll;
 }
 
 .contenitore-contenuti .headbar{
@@ -101,6 +103,7 @@ ul{
     padding: 20px 5px;
     justify-content: flex-end;
     background-color: rgb(8, 11, 18);
+    
 }
 
 .headbar a{
@@ -119,7 +122,45 @@ ul{
 /* navbar-content */
 
 .content-nav{
-    display: flex;
     font-size: 20px;
     color: white;
+}
+.content-nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+    color: gray;
+}
+.content-nav ul  a{
+    text-transform: uppercase;
+}
+.content-nav ul  a:hover{
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+
+/* content */
+.section-play{
+    padding-left: 20px;
+    margin-top: 40px;
+}
+.contenuti img{
+    width: 100%;
+}
+.contenuti{
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    /* flex-wrap: wrap; */
+}
+.img-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px   ;
 }

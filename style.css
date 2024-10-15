@@ -91,21 +91,34 @@ ul{
     min-width: 85vw;
     background-color: rgb(20, 24, 33);
     position: absolute;
-    top: 0;
+    top: 10vh;
     left: 15vw;
     min-height: 100vw;
     overflow-y: scroll;
 }
 
-.contenitore-contenuti .headbar{
+/* .contenitore-contenuti .headbar{
     display: flex;
     align-items: center;
     padding: 20px 5px;
     justify-content: flex-end;
     background-color: rgb(8, 11, 18);
-    
+    position: fixed;
+    min-width: 85vw;
+} */
+.headbar{
+    display: flex;
+    align-items: center;
+    padding: 20px 5px;
+    justify-content: flex-end;
+    background-color: rgb(8, 11, 18);
+    position: fixed;
+    min-width: 85vw;
+    min-height: 10vh;
+    top: 0;
+    right: 0;
+    z-index: 60;
 }
-
 .headbar a{
     text-decoration: none;
     color: white;
@@ -124,6 +137,7 @@ ul{
 .content-nav{
     font-size: 20px;
     color: white;
+    padding-top: 20px;
 }
 .content-nav ul{
     display: flex;

@@ -16,17 +16,26 @@
             <div class="logo">
                 <img src="img/logo.svg" alt="logo">
             </div>
-            <div class="navigation">
+            <div class="navigation-first">
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li><a href="#"><i class="fa-solid fa-house"></i></i>Home</a></li>
+                    <div class="relative">
+                        <li class="after-green"><a href="#"><i class="fa-solid fa-house "></i>Home</a></li>
+                    </div>
+                    <div class="relative">
+                        <li class="after-green"><a href="#"><i class="fa-solid fa-search "></i>Cerca</a></li>
+                    </div>
+                    <div class="relative">
+                        <li class="after-green"><a href="#"><i class="fa-solid fa-swatchbook "></i>La tua libreria</a></li>
+                    </div>
                 </ul>
             </div>
-            <div class="playlist">
+            <div class="navigation">
                 <ul>
                     <li class="capo-lista"><stron>Playlist</stron></li>
-                    <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <div class="icon-sidebar">
+                        <li><a href="#"><i class="fa-solid fa-plus" id="add-icon" style="color: #d1d1d1;"></i></a></li>
+                        <li><a href=#>Crea Playlist</a></li>
+                    </div>
                     <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
                     <li><a href="#"><i class="fa-solid fa-house"></i></i>Home</a></li>
                 </ul>
@@ -51,12 +60,11 @@
             </div> -->
             <div class="content-nav">
                 <ul>
-                    <a><li>Podcast</li></a>
-                    <a><li>Podcast</li></a>
-                    <a><li>Podcast</li></a>
-                    <a><li>Podcast</li></a>
-                    <a><li>Podcast</li></a>
-                   
+                    <div class="relative"><a><li class="after-green-column">Podcast</li></a></div>
+                    <div class="relative"><a><li class="after-green-column">Podcast</li></a></div>
+                    <div class="relative"><a><li class="after-green-column">Podcast</li></a></div>
+                    <div class="relative"><a><li class="after-green-column">Podcast</li></a></div>
+                    <div class="relative"><a><li class="after-green-column">Podcast</li></a></div>
                 </ul>
             </div>
             <h3 class="section-play">Recently Played</h3>
@@ -153,56 +161,135 @@
                 </div>
             </div>
             <h3 class="section-play">Recently Played</h3>
+            <p class="description-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus labore officia id nostrum autem. Nostrum, suscipit! Quas tempore ipsam mollitia!</p>
             <div class="contenuti">
                 <div class="img-description">
-                    <img src="img/metal_lifting.jpg" alt="">
-                    <p>A quiet place</p>
+                    <div class="img-card">
+                        <a href="#">
+                        <!-- <i class="fa-regular fa-circle-play"></i> -->
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <div class="icon-overlay">
+                            <i class="fa-regular fa-circle-play icon"></i>
+                        </div>
+                        </a>
+                    </div>
+                    <ul>
+                        <a href="#"><li class="titolo-canzone">Metal</li></a>
+                        <a href="#"><li class="autore">Subtitle</li></a>
+                    </ul>
                 </div>
                 <div class="img-description">
-                    <img src="img/metal_lifting.jpg" alt="">
-                    <p>Heavy metal</p>
+                    <div class="img-card">
+                        <a href="#">
+                        <!-- <i class="fa-regular fa-circle-play"></i> -->
+                        <img src="img/stranger.jpeg" alt="">
+                        <div class="icon-overlay">
+                            <i class="fa-regular fa-circle-play icon"></i>
+                        </div>
+                        </a>
+                    </div>
+                    <ul>
+                        <a href="#"><li class="titolo-canzone">Metal</li></a>
+                        <a href="#"><li class="autore">Subtitle</li></a>
+                    </ul>
                 </div>
                 <div class="img-description">
-                    <img src="img/metal_lifting.jpg" alt="">
-                    <p>Stranger Things</p>
+                    <div class="img-card">
+                        <a href="#">
+                        <!-- <i class="fa-regular fa-circle-play"></i> -->
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <div class="icon-overlay">
+                            <i class="fa-regular fa-circle-play icon"></i>
+                        </div>
+                        </a>
+                    </div>
+                    <ul>
+                        <a href="#"><li class="titolo-canzone">Metal</li></a>
+                        <a href="#"><li class="autore">Subtitle</li></a>
+                    </ul>
+                </div>
+                <div class="img-description">
+                    <div class="img-card">
+                        <a href="#">
+                        <!-- <i class="fa-regular fa-circle-play"></i> -->
+                        <img src="img/stranger.jpeg" alt="">
+                        <div class="icon-overlay">
+                            <i class="fa-regular fa-circle-play icon"></i>
+                        </div>
+                        </a>
+                    </div>
+                    <ul>
+                        <a href="#"><li class="titolo-canzone">Metal</li></a>
+                        <a href="#"><li class="autore">Subtitle</li></a>
+                    </ul>
                 </div>
                 <div class="img-description">
                     <img src="img/metal_lifting.jpg" alt="">
                     <p>Split</p>
                 </div>
                 <div class="img-description">
-                    <img src="img/metal_lifting.jpg" alt="">
-                    <p>Metallica</p>
+                    <div class="img-card">
+                        <a href="#">
+                        <!-- <i class="fa-regular fa-circle-play"></i> -->
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <div class="icon-overlay">
+                            <i class="fa-regular fa-circle-play icon"></i>
+                        </div>
+                        </a>
+                    </div>
+                    <ul>
+                        <a href="#"><li class="titolo-canzone">Metal</li></a>
+                        <a href="#"><li class="autore">Subtitle</li></a>
+                    </ul>
                 </div>
                 <div class="img-description">
-                    <img src="img/metal_lifting.jpg" alt="">
-                    <p>Sinister</p>
+                    <div class="img-card">
+                        <a href="#">
+                        <!-- <i class="fa-regular fa-circle-play"></i> -->
+                        <img src="img/stranger.jpeg" alt="">
+                        <div class="icon-overlay">
+                            <i class="fa-regular fa-circle-play icon"></i>
+                        </div>
+                        </a>
+                    </div>
+                    <ul>
+                        <a href="#"><li class="titolo-canzone">Metal</li></a>
+                        <a href="#"><li class="autore">Subtitle</li></a>
+                    </ul>
                 </div>
             </div>
+            <h3 class="section-play">Artisti più Popolari</h3>
+            <p class="description-section">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <div class="contenuti">
                 <div class="img-description">
-                    <img src="img/metal_lifting.jpg" alt="">
-                    <p>A quiet place</p>
+                    <div class="img-card">
+                        <a href="#">
+                        <!-- <i class="fa-regular fa-circle-play"></i> -->
+                        <img class="border-radius" src="img/youg.jpeg" alt="">
+                        <div class="icon-overlay border-radius">
+                            <i class="fa-regular fa-circle-play icon"></i>
+                        </div>
+                        </a>
+                    </div>
+                    <ul>
+                        <a href="#"><li class="titolo-canzone">Lana del rey</li></a>
+                        <a href="#"><li class="autore"></li></a>
+                    </ul>
                 </div>
                 <div class="img-description">
-                    <img src="img/metal_lifting.jpg" alt="">
-                    <p>Heavy metal</p>
-                </div>
-                <div class="img-description">
-                    <img src="img/metal_lifting.jpg" alt="">
-                    <p>Stranger Things</p>
-                </div>
-                <div class="img-description">
-                    <img src="img/metal_lifting.jpg" alt="">
-                    <p>Split</p>
-                </div>
-                <div class="img-description">
-                    <img src="img/metal_lifting.jpg" alt="">
-                    <p>Metallica</p>
-                </div>
-                <div class="img-description">
-                    <img src="img/metal_lifting.jpg" alt="">
-                    <p>Sinister</p>
+                    <div class="img-card">
+                        <a href="#">
+                        <!-- <i class="fa-regular fa-circle-play"></i> -->
+                        <img class="border-radius" src="img/youg.jpeg" alt="">
+                        <div class="icon-overlay border-radius">
+                            <i class="fa-regular fa-circle-play icon"></i>
+                        </div>
+                        </a>
+                    </div>
+                    <ul>
+                        <a href="#"><li class="titolo-canzone">Metal</li></a>
+                        <a href="#"><li class="autore"></li></a>
+                    </ul>
                 </div>
             </div>
         </div>

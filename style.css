@@ -236,3 +236,20 @@ ul{
 .img-description a{
     text-decoration: none;
 }
+
+@media screen and (max-width: 1439px){
+    .img-description{
+        width: calc(100%/4);
+    }
+}
+@media screen and (max-width: 768px){
+    .img-description{
+        width: calc(100%/2);
+    }
+}
+
+@media screen and (max-width: 426px){
+    .img-description{
+        width: calc(100%/1);
+    }
+}

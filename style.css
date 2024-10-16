@@ -123,11 +123,26 @@ ul{
 
 .bottom-side-bar .persona{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     gap: 5px;
     font-size: 14px;
+    height: 40px;
+    margin: 0 auto;
 }
-
+.w50 img{
+    width: 40px;
+    display: block;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: gray;
+}
+.w50{
+    position: relative;
+    display: inline-block;
+}
 /* main-content */
 
 .contenitore-contenuti{
@@ -296,7 +311,7 @@ ul{
 .border-radius{
     border-radius: 50%;
     background-color: red;
-    width: 100%;
+    width: 50px;
 }
 /* icon */
 #add-icon{
@@ -316,8 +331,15 @@ ul{
     .logo img{
         display: none;
     }
+    .invisible img{
+        filter: brightness(0) invert(1);
+    }
     .invisible{
-        display: block;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
     }
     .fantasma{
         display: none;
@@ -345,6 +367,21 @@ ul{
     }
     .contenitore-contenuti{
         margin-left: 5vw;
+    }
+    .w50{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .w50 img{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+
+    }
+    .bottom-side-bar .persona{
+        display: block;
     }
 }
 

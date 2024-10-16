@@ -27,6 +27,9 @@ ul{
 .relative{
     position: relative;
 }
+.invisible{
+    display: none;
+}
 .after-green:hover::after{
     content: '';
     position: absolute;
@@ -67,8 +70,12 @@ ul{
     z-index: 1000;
 }
 
+.logo{
+    width: 110px;
+}
 .logo img{
-    width: 80%;
+    width: 100%;
+    height: 100%;
     display: flex;
 }
 .side-bar .capo-lista{
@@ -302,9 +309,42 @@ ul{
         width: calc(100%/4);
     }
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 976px){
     .img-description{
         width: calc(100%/2);
+    }
+    .logo img{
+        display: none;
+    }
+    .invisible{
+        display: block;
+    }
+    .fantasma{
+        display: none;
+    }
+    .bottom-side-bar{
+        font-size: 20px;
+    }
+    .bottom-side-bar{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .navigation-first{
+        display: flex;
+        flex-direction: column;
+    }
+    .icona{
+        color: white;
+        font-size: 20px;
+    }
+    .side-bar{
+        width: 5vw;
+    }
+    .contenitore-contenuti{
+        margin-left: 5vw;
     }
 }
 

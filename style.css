@@ -7,8 +7,7 @@
 body{
     background-color: blue;
     font-family: "Montserrat", sans-serif;
-    /* overflow-x: hidden; */
-    background-color: rgb(20, 24, 33)
+    background-color: rgb(20, 24, 33);
 }
 
 main{
@@ -22,6 +21,7 @@ ul{
 .debug{
     border: 1px solid red
 }
+
 /* sidebar */
 .navigation-first{
     display: flex;
@@ -156,7 +156,6 @@ ul{
     /* left: 15vw; */
     margin-left: 15vw;
     min-height: 100vw;
-    overflow-y: auto;
 }
 
 /* .contenitore-contenuti .headbar{
@@ -436,7 +435,7 @@ ul{
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 15%;
+    width: auto;
 }
 .volume-playing .time-bar{
     background-color: gray;
@@ -451,9 +450,15 @@ ul{
     justify-content: center;
     height: 100%;
 }
+#white{
+    color: white;
+}
 @media screen and (max-width: 1439px){
     .img-description{
         width: calc(100%/4);
+    }
+    .icone-command{
+        width: 80%;
     }
 }
 @media screen and (max-width: 976px){
@@ -515,10 +520,80 @@ ul{
     .bottom-side-bar .persona{
         display: block;
     }
+    .icone-command{
+        width: 50%;
+        
+    }
+    .song-time{
+        width: 100%;
+        gap: 10px;
+    }
+    .current-time{
+        font-size: 0.7rem;
+        width: 10%;
+    }
+    .total-time{
+        font-size: 0.7rem;
+        width: 10%;
+    }
+    .song-time .time-bar{
+        height: 3px;
+    }
+    .canzone-playing{
+        width: auto;
+    }
+    .volume-playing{
+        width: auto;
+    }
+    .comandi-playing{
+        width: 65%;
+        height: 100%;
+    }
+    .icone-footer{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.7rem;
+    }
+    .nome-canzone-autore{
+        font-size: 0.7rem;
+    }
+    .nome-canzone-autore p{
+        font-size: 0.5rem;
+    }
+    .contenitore-footer{
+        padding: 5px;
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width: 500px){
     .img-description{
         width: calc(100%/1);
+    }
+    .song-time{
+        width: 100%;
+        gap: 5px;
+    }
+    .current-time{
+        font-size: 0.4rem;
+        width: 10%;
+    }
+    .total-time{
+        font-size: 0.4rem;
+        width: 10%;
+    }
+    .song-time .time-bar{
+        height: 3px;
+    }
+    .nome-canzone-autore p{
+        font-size: 0.3rem;
+    }
+    .volume-playing{
+        gap: 0;
+        width: auto;
+    }
+      
+    .time-bar-box .time-bar{
+        width: 90%;
     }
 }

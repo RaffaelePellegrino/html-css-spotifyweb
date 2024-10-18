@@ -8,6 +8,7 @@ body{
     background-color: blue;
     font-family: "Montserrat", sans-serif;
     background-color: rgb(20, 24, 33);
+    overflow: hidden;
 }
 
 main{
@@ -155,7 +156,9 @@ ul{
     /* top: 10vh; */
     /* left: 15vw; */
     margin-left: 15vw;
-    min-height: 100vw;
+    height: 79vh;
+    overflow-y: scroll;
+    
 }
 
 /* .contenitore-contenuti .headbar{
